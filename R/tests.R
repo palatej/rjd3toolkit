@@ -18,7 +18,7 @@ statisticaltest<-function(val, pval, dist=NULL){
   }else if (pval>1){
     pval=1
   }
-  return (structure(list(value=val, pvalue=pval), distribution=dist, class=c("JD3TEST", "JD3")))
+  return (structure(list(value=val, pvalue=pval), distribution=dist, class=c("JD3_TEST", "JD3")))
 }
 
 #' Title
@@ -30,7 +30,7 @@ statisticaltest<-function(val, pval, dist=NULL){
 #' @export
 #'
 #' @examples
-print.JD3TEST<-function(test, details=F){
+print.JD3_TEST<-function(test, details=F){
   cat('Value: ', test$value, '\n')
   cat('P-Value: ', sprintf('%.4f', test$pvalue), '\n')
   if (details){
@@ -49,8 +49,8 @@ print.JD3TEST<-function(test, details=F){
 #' @param k
 #' @param lag
 #' @param nhp
-#' @param sign
-#' @param mean
+#' @param sign If 1, only positive auto-corrrelations are considered in the test. If -1, only negative auto-correlations are considered. If 0, all auto-correlations are integrated in the test.
+#' @param mean Mean correction. If true, the auto-correlations are computed as usual. If false, we consider that the (known) mean is 0 and that the series has been corrected for it.
 #'
 #' @return
 #' @export

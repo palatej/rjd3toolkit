@@ -7,7 +7,9 @@
 ljungbox(data, k, lag = 1, nhp = 0, sign = 0, mean = T)
 }
 \arguments{
-\item{mean}{}
+\item{sign}{If 1, only positive auto-corrrelations are considered in the test. If -1, only negative auto-correlations are considered. If 0, all auto-correlations are integrated in the test.}
+
+\item{mean}{Mean correction. If true, the auto-correlations are computed as usual. If false, we consider that the (known) mean is 0 and that the series has been corrected for it.}
 }
 \value{
 

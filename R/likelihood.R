@@ -23,5 +23,5 @@ likelihood<-function(nobs, neffectiveobs=NA, nparams=0, ll, adjustedll=NA, aic, 
   return (structure(list(nobs=nobs, neffectiveobs=neffectiveobs, nparams=nparams,
                          ll=ll, adjustedll=adjustedll,
                          aic=aic, aicc=aicc, bic=bic, bicc=bicc, ssq=ssq),
-                    class = "JD3LIKELIHOOD"))
+                    class = "JD3_LIKELIHOOD"))
 }

@@ -150,3 +150,17 @@ message SarimaModel{
 	int32 bd = 7;
 	repeated double btheta = 8;
 }
+
+message UcarimaModel{
+   // aggregated model
+   ArimaModel model = 1;
+   // components
+   repeated ArimaModel components = 2;
+}
+
+message WienerKolmogorovFilter{
+	// symmetric filter
+	repeated double weights = 1;
+	repeated double gain = 2;
+}
+
