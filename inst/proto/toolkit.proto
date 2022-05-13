@@ -277,6 +277,11 @@ enum CalendarEvent{
     HOLIDAY_CHRISTMAS = 21;
 }
 
+message SingleDate{
+	Date date = 1;
+	double weight = 2;
+}
+
 message FixedDay{
 	int32 month = 1;
 	int32 day = 2;
@@ -321,6 +326,7 @@ message Calendar{
 	repeated EasterRelatedDay easter_related_days = 2;
 	repeated FixedWeekDay fixed_week_days = 3;
 	repeated PrespecifiedHoliday prespecified_holidays = 4;
+	repeated SingleDate single_dates = 5;
 }
 
 message WeightedCalendar{
