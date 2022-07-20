@@ -2,18 +2,15 @@
 % Please edit documentation in R/calendarts.R
 \name{r2jd_calendarts}
 \alias{r2jd_calendarts}
-\title{Title}
+\title{Create Java CalendarTimeSeries}
 \usage{
 r2jd_calendarts(calendarobs)
 }
 \arguments{
-\item{calendarobs}{}
-}
-\value{
-
+\item{calendarobs}{list.}
 }
 \description{
-Title
+Create Java CalendarTimeSeries
 }
 \examples{
 obs<-list(

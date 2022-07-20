@@ -4,6 +4,8 @@ NULL
 OBJ<-'JD3_Object'
 RSLT<-'JD3_ProcResults'
 
+#' @export
+#' @rdname jd3_utilities
 jd3Object<-function(jobjRef, subclasses=NULL, result=F){
   if (result)
     classes<-c(OBJ, RSLT, subclasses)
@@ -12,12 +14,14 @@ jd3Object<-function(jobjRef, subclasses=NULL, result=F){
   return (structure(list(internal=jobjRef), class=classes))
 }
 
+
 #' Get Dictionary and Result
 #'
-#' Extract dictionnay of a \code{"JD3_ProcResults"} object (\code{dictionary()}) and extract a specific value (\code{result()})
+#' Extract dictionnay of a \code{"JD3_ProcResults"} object (\code{dictionary()}) and extract a specific value (\code{result()}) or a list of values (\code{user_defined()})
 #'
-#' @param object the object.
+#' @param object the java object.
 #' @param id the name of the object to extract.
+#' @param userdefined vector containing the names of the object to extract
 #'
 #' @export
 dictionary<-function(object){
@@ -45,4 +49,20 @@ result<-function(object, id){
     proc_data(object$internal, id)
     }
 }
+
+#' @rdname dictionary
+#' @export
+user_defined <- function(object, userdefined = NULL){
+  if(is.null(userdefined)){
+    result <- list()
+  }else{
+    result <- lapply(userdefined,
+                     function(var) result(object, var))
+    if (is.null(names(userdefined)))
+      names(result) <- userdefined
+  }
+  class(result) <- c("user_defined")
+  result
+}
+
 

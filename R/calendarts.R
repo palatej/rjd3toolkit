@@ -1,8 +1,7 @@
-#' Title
+#' Create Java CalendarTimeSeries
 #'
-#' @param calendarobs
+#' @param calendarobs list.
 #'
-#' @return
 #' @export
 #'
 #' @examples

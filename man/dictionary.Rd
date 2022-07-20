@@ -3,17 +3,22 @@
 \name{dictionary}
 \alias{dictionary}
 \alias{result}
+\alias{user_defined}
 \title{Get Dictionary and Result}
 \usage{
 dictionary(object)
 
 result(object, id)
+
+user_defined(object, userdefined = NULL)
 }
 \arguments{
-\item{object}{the object.}
+\item{object}{the java object.}
 
 \item{id}{the name of the object to extract.}
+
+\item{userdefined}{vector containing the names of the object to extract}
 }
 \description{
-Extract dictionnay of a \code{"JD3_ProcResults"} object (\code{dictionary()}) and extract a specific value (\code{result()})
+Extract dictionnay of a \code{"JD3_ProcResults"} object (\code{dictionary()}) and extract a specific value (\code{result()}) or a list of values (\code{user_defined()})
 }
