@@ -11,7 +11,7 @@ corrected for long term mean."><meta property="og:image" content="https://rjdver
 
     <a class="navbar-brand me-2" href="../index.html">rjd3toolkit</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">3.2.4.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">3.3.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,7 +76,7 @@ parameters <code>frequency</code>, <code>start</code> and <code>length</code> ar
 <dd><p>Groups of days. The length of the array must be 7. It indicates to what group each week day
 belongs. The first item corresponds to Mondays and the last one to Sundays. The group used for contrasts (usually Sundays) is identified by 0.
 The other groups are identified by 1, 2,... n (&lt;= 6). For instance, usual trading days are defined by c(1,2,3,4,5,6,0),
-week days by c(1,1,1,1,1,0,0), week days, Saturdays, Sundays by c(1,1,1,1,1,2,0) etc...</p></dd>
+week days by c(1,1,1,1,1,0,0), week days, Saturdays, Sundays by c(1,1,1,1,1,2,0) etc.</p></dd>
 
 
 <dt id="arg-contrasts">contrasts<a class="anchor" aria-label="anchor" href="#arg-contrasts"></a></dt>
@@ -108,10 +108,10 @@ the reference group (0).</p>
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Monthly regressors for Trading Days: each type of day is different</span></span></span>
 <span class="r-in"><span><span class="co"># contrasts to Sundays (6 series)</span></span></span>
-<span class="r-in"><span><span class="va">regs_td</span><span class="op">&lt;-</span> <span class="fu">td</span><span class="op">(</span><span class="fl">12</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2020</span>,<span class="fl">1</span><span class="op">)</span>,<span class="fl">60</span>, groups <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">0</span><span class="op">)</span>, contrasts <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">regs_td</span> <span class="op">&lt;-</span> <span class="fu">td</span><span class="op">(</span><span class="fl">12</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2020</span>, <span class="fl">1</span><span class="op">)</span>, <span class="fl">60</span>, groups <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">0</span><span class="op">)</span>, contrasts <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="co"># Quarterly regressors for Working Days: week days are similar</span></span></span>
 <span class="r-in"><span><span class="co"># contrasts to week-end days (1 series)</span></span></span>
-<span class="r-in"><span><span class="va">regs_wd</span><span class="op">&lt;-</span> <span class="fu">td</span><span class="op">(</span><span class="fl">4</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2020</span>,<span class="fl">1</span><span class="op">)</span>,<span class="fl">60</span>, groups <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">0</span>, <span class="fl">0</span><span class="op">)</span>, contrasts <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">regs_wd</span> <span class="op">&lt;-</span> <span class="fu">td</span><span class="op">(</span><span class="fl">4</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2020</span>, <span class="fl">1</span><span class="op">)</span>, <span class="fl">60</span>, groups <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">0</span>, <span class="fl">0</span><span class="op">)</span>, contrasts <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

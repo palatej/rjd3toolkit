@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">rjd3toolkit</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">3.2.4.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">3.3.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +75,7 @@ If <code>data</code> is not a <code>"ts"</code> object, <code>firstperiod = 1</c
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">s</span><span class="op">&lt;-</span><span class="fu"><a href="do_stationary.html">do_stationary</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">ABS</span><span class="op">$</span><span class="va">X0.2.09.10.M</span><span class="op">)</span><span class="op">)</span><span class="op">$</span><span class="va">ddata</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">s</span> <span class="op">&lt;-</span> <span class="fu"><a href="do_stationary.html">do_stationary</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">ABS</span><span class="op">$</span><span class="va">X0.2.09.10.M</span><span class="op">)</span><span class="op">)</span><span class="op">$</span><span class="va">ddata</span></span></span>
 <span class="r-in"><span><span class="fu">seasonality_combined</span><span class="op">(</span><span class="va">s</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $seasonality</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "PRESENT"</span>
@@ -125,43 +125,43 @@ If <code>data</code> is not a <code>"ts"</code> object, <code>firstperiod = 1</c
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "NONE"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $kruskalwallis</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Value: 11.89752 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> P-Value: 0.0643 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Value: 1.771826 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> P-Value: 0.9394 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $stable</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $stable$SSM</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 274.9793</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 24.06885</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $stable$dfM</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 6</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $stable$SSR</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 56751.82</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 12050.91</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $stable$dfR</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 993</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $stable$test</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Value: 0.8018963 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> P-Value: 0.5685 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Value: 0.3305472 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> P-Value: 0.9210 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $evolutive</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $evolutive$SSM</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 7365.115</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 1486.448</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $evolutive$dfM</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 141</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $evolutive$SSR</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 46101.08</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 8423.827</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $evolutive$dfR</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 846</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $evolutive$test</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Value: 0.9585608 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> P-Value: 0.6166 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Value: 1.058745 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> P-Value: 0.3167 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 </code></pre></div>
