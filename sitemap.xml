@@ -9,6 +9,7 @@
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/ABS.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/Exports.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/Imports.html</loc></url>
+<url><loc>https://rjdverse.github.io/rjd3toolkit/reference/Retail.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/add_outlier.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/add_usrdefvar.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/aggregate.html</loc></url>
@@ -31,6 +32,7 @@
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/differences.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/differencing_fast.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/do_stationary.html</loc></url>
+<url><loc>https://rjdverse.github.io/rjd3toolkit/reference/dot-add_ud_var.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/dot-likelihood.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/dot-tsmoniker.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/easter_dates.html</loc></url>
@@ -56,16 +58,15 @@
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/natural_cspline.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/normality_tests.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/outliers_variables.html</loc></url>
-<url><loc>https://rjdverse.github.io/rjd3toolkit/reference/periodic.dummies.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/periodic_bsplines.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/periodic_cspline.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/periodic_csplines.html</loc></url>
+<url><loc>https://rjdverse.github.io/rjd3toolkit/reference/periodic_dummies.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/print.calendars.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/r2jd_calendarts.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/ramp_variable.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/rangemean_tstat.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/reload_dictionaries.html</loc></url>
-<url><loc>https://rjdverse.github.io/rjd3toolkit/reference/retail.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/runstests.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/sa_decomposition.html</loc></url>
 <url><loc>https://rjdverse.github.io/rjd3toolkit/reference/sa_preprocessing.html</loc></url>

@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Utility Functions around JDemetra+ 3.0 • rjd3toolkit</title>
+<title>Utility Functions Around JDemetra+ 3.0 • rjd3toolkit</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -16,7 +16,7 @@
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Utility Functions around JDemetra+ 3.0">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Utility Functions Around JDemetra+ 3.0">
 <meta name="description" content="R Interface to JDemetra+ 3.x (&lt;https://github.com/jdemetra&gt;) time series analysis software. It provides functions allowing to model time series (create outlier regressors, user-defined calendar regressors, UCARIMA models...), to test the presence of trading days or seasonal effects and also to set specifications in pre-adjustment and benchmarking when using rjd3x13 or rjd3tramoseats.">
 <meta property="og:description" content="R Interface to JDemetra+ 3.x (&lt;https://github.com/jdemetra&gt;) time series analysis software. It provides functions allowing to model time series (create outlier regressors, user-defined calendar regressors, UCARIMA models...), to test the presence of trading days or seasonal effects and also to set specifications in pre-adjustment and benchmarking when using rjd3x13 or rjd3tramoseats.">
 <meta property="og:image" content="https://rjdverse.github.io/rjd3toolkit/logo.svg">
@@ -38,14 +38,27 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
+<li class="active nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span></a></li>
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
-<li class="nav-item"><a class="nav-link" href="news/index.html">Changelog</a></li>
+<li class="nav-item"><a class="nav-link" href="news/index.html">News</a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-around-jdemetra-and-r" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Around JDemetra+ and R</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-around-jdemetra-and-r">
+<li><a class="external-link dropdown-item" href="https://github.com/rjdverse/rjd3x13">rjd3x13</a></li>
+    <li><a class="external-link dropdown-item" href="https://github.com/rjdverse/rjd3tramoseats">rjd3tramoseats</a></li>
+    <li><a class="external-link dropdown-item" href="https://github.com/rjdverse/rjd3workspace">rjd3workspace</a></li>
+  </ul>
+</li>
       </ul>
 <ul class="navbar-nav">
-<li class="nav-item"><form class="form-inline" role="search">
- <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="search.json">
-</form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/rjdverse/rjd3toolkit/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-jdemetra-" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">JDemetra+</button>
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-jdemetra-">
+<li><a class="external-link dropdown-item" href="https://github.com/jdemetra/jdemetra-app/releases">Download JDemetra+</a></li>
+    <li><a class="external-link dropdown-item" href="https://jdemetra-new-documentation.netlify.app/">JDemetra+ documentation</a></li>
+  </ul>
+</li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/rjdverse/rjd3toolkit"><span class="fa fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
@@ -69,11 +82,11 @@
 <h2 id="main-functions">Main Functions<a class="anchor" aria-label="anchor" href="#main-functions"></a>
 </h2>
 <ul>
-<li><p>customize specifications in rjd3x13 and rjdtramoseats</p></li>
+<li><p>customize specifications in rjd3x13 and rjd3tramoseats</p></li>
 <li><p>generate user-defined regressors for calendar correction</p></li>
 <li><p>generate auxiliary variables (outliers, ramps..)</p></li>
 <li><p>run arima model estimations</p></li>
-<li><p>perform tests (seasonality, normality, white noise)</p></li>
+<li><p>perform tests (seasonality, normality, independence)</p></li>
 <li><p>access general functions such as auto-correlations, distributions</p></li>
 </ul>
 </div>
@@ -114,7 +127,7 @@
 <div class="section level2">
 <h2 id="licensing">Licensing<a class="anchor" aria-label="anchor" href="#licensing"></a>
 </h2>
-<p>The code of this project is licensed under the <a href="https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12" class="external-link">European Union Public Licence (EUPL)</a>.</p>
+<p>The code of this project is licensed under the <a href="https://interoperable-europe.ec.europa.eu:443/collection/eupl/eupl-text-eupl-12" class="external-link">European Union Public Licence (EUPL)</a>.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
@@ -162,6 +175,7 @@
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://CRAN.R-project.org/package=rjd3toolkit" class="external-link"><img src="https://www.r-pkg.org/badges/version/rjd3toolkit" alt="CRAN status"></a></li>
+<li><a href="http://www.awesomeofficialstatistics.org" class="external-link"><img src="https://awesome.re/mentioned-badge.svg" alt="Mentioned in Awesome Official Statistics"></a></li>
 </ul>
 </div>
 
