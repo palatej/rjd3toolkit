@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">rjd3toolkit</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">3.5.1.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">3.5.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +15,7 @@
     </button>
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
-      <ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="../index.html"><span class="fa fa-home fa-lg"></span></a></li>
+      <ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="../index.html" aria-label="Home"><span class="fa fa-home fa-lg"></span></a></li>
 <li class="active nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
 <li class="nav-item"><a class="nav-link" href="../news/index.html">News</a></li>
 <li class="nav-item dropdown">
@@ -75,14 +75,15 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Probability density function of T with 2 degrees of freedom.</span></span></span>
-<span class="r-in"><span><span class="va">z</span> <span class="op">&lt;-</span> <span class="fu">density_t</span><span class="op">(</span>df<span class="op">=</span><span class="fl">2</span>, <span class="fl">.01</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">100</span>, <span class="fl">100</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">z</span> <span class="op">&lt;-</span> <span class="fu">density_t</span><span class="op">(</span>df <span class="op">=</span> <span class="fl">2</span>, <span class="fl">.01</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">100</span>, <span class="fl">100</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="co"># Generating a random vector with each component drawn from a T(2) distribution</span></span></span>
 <span class="r-in"><span><span class="va">z</span> <span class="op">&lt;-</span> <span class="fu">random_t</span><span class="op">(</span><span class="fl">2</span>, <span class="fl">100</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="co"># Computing the probabilty that the random variable X folllowing a T distrubution with df degrees of freedom is lower than x</span></span></span>
-<span class="r-in"><span><span class="va">z</span><span class="op">&lt;-</span><span class="fu">cdf_t</span><span class="op">(</span>df<span class="op">=</span><span class="fl">12</span>,x<span class="op">=</span><span class="fl">1.2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="co"># Computing the probabilty that the random variable X following a T distribution</span></span></span>
+<span class="r-in"><span><span class="co"># with df degrees of freedom is lower than x</span></span></span>
+<span class="r-in"><span><span class="va">z</span> <span class="op">&lt;-</span> <span class="fu">cdf_t</span><span class="op">(</span>df <span class="op">=</span> <span class="fl">12</span>, x <span class="op">=</span> <span class="fl">1.2</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">z</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.8733526</span>
-<span class="r-in"><span><span class="va">z</span><span class="op">&lt;-</span><span class="fu">cdf_t</span><span class="op">(</span>df<span class="op">=</span><span class="fl">12</span>,x<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span><span class="op">)</span> <span class="co"># array of values</span></span></span>
+<span class="r-in"><span><span class="va">z</span> <span class="op">&lt;-</span> <span class="fu">cdf_t</span><span class="op">(</span>df <span class="op">=</span> <span class="fl">12</span>, x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span><span class="op">)</span> <span class="co"># array of values</span></span></span>
 <span class="r-in"><span><span class="va">z</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1] 0.5000000 0.8314755 0.9656725 0.9944667 0.9991192 0.9998453 0.9999689</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [8] 0.9999928 0.9999981 0.9999994 0.9999998</span>
