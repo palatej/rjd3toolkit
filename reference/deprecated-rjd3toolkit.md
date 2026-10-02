@@ -1,0 +1,27 @@
+# Deprecated functions
+
+Use
+[`sa_decomposition()`](https://rjdverse.github.io/rjd3toolkit/reference/sa_decomposition.md)
+instead of `sa.decomposition()`.
+
+## Usage
+
+``` r
+sa.decomposition(x, ...)
+
+sa_preprocessing(x, ...)
+```
+
+## Arguments
+
+- x:
+
+  the object to print.
+
+- ...:
+
+  further arguments.
+
+## Value
+
+`"JD3_SADECOMPOSITION"` object.
